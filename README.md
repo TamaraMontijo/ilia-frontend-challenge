@@ -2,7 +2,7 @@
 
 ![banner ecoleta](https://res.cloudinary.com/dnaglzg7k/image/upload/v1647901138/Design_sem_nome_sgli8i.png)
 
-Desafio de frontend proposto pela Ília. A descrição do desafio proposto pode ser vista nesse link:
+Desafio de frontend proposto pela Ília. Para mais detalhes, acesse o link:
 https://github.com/aisdigital/FrontEndChallenge/blob/master/README.md
 
 # 🛠 Tecnologias
