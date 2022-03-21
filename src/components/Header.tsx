@@ -1,4 +1,5 @@
 import "../styles/header.scss";
+import { SearchBar } from "./SearchBar";
 
 export default function Header() {
   return (

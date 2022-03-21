@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { api } from "../services/api";
 import PokemonList from "../interfaces/PokemonList.interface";
 import Header from "../components/Header";
+import { PokemonCarousel } from "../components/Carousel";
 
 export function PokemonHome() {
   const [pokemonList, setPokemonList] = useState<PokemonList | null>(null);
@@ -18,6 +19,7 @@ export function PokemonHome() {
   return (
     <>
       <Header />
+      <PokemonCarousel cards={pokemonList?.cards} />
       <div className="card-table">
         {loading && (
           <Spinner animation="border" role="status">
