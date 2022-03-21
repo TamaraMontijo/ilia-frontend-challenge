@@ -5,7 +5,7 @@
 Desafio de frontend proposto pela Ília. Para mais detalhes, acesse o link:
 https://github.com/aisdigital/FrontEndChallenge/blob/master/README.md
 
-# 🛠 Tecnologias
+### 🛠 Tecnologias
 As seguintes ferramentas foram usadas na construção do projeto:
 
 * ReactJs
@@ -13,7 +13,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 * Bootstrap
 * Sass
 
-# 📝 Como executar
+### 📝 Como executar
 
 1. Clone o projeto e acesse a sua pasta 
       ```bash
@@ -34,7 +34,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 4. O projeto será executado no localhost:3000
 
-# 🚀 Projeto no ar
+### 🚀 Projeto no ar
 
 Acesse o projeto publicado através do link:
 https://resonant-pika-77fd8f.netlify.app/
