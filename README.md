@@ -33,3 +33,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
       ```
 
 4. O projeto será executado no localhost:3000
+
+# 🚀 Projeto no ar
+
+Acesse o projeto publicado através do link:
+https://resonant-pika-77fd8f.netlify.app/
