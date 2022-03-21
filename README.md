@@ -18,9 +18,19 @@ As seguintes ferramentas foram usadas na construção do projeto:
 # 📝 Como executar
 
 1. Clone o projeto e acesse a sua pasta 
-2. Instale as dependências usando o comando
+   ```bash
+   git clone git@github.com:TamaraMontijo/ilia-frontend-challenge.git
+   # OU
+   git clone https://github.com/TamaraMontijo/ilia-frontend-challenge.git
+   ```
+
+3. Instale as dependências 
+   ```bash
    $ yarn
-3. Rode o projeto utilizando o comando
-   $ yarn dev
+   ```
+4. Rode o projeto utilizando o comando
+  ```bash
+  $ yarn dev
+   ```
    
    O projeto será executado no localhost:3000
