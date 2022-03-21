@@ -1,7 +1,7 @@
-import { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { PokemonHome } from "./pages/PokemonHome";
 import { PokemonDetails } from "./pages/PokemonDetails";
+import Header from "./components/Header";
 
 function App() {
   return (
