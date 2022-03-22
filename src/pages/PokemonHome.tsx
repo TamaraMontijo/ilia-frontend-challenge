@@ -13,13 +13,15 @@ export function PokemonHome() {
   const [loading, setLoading] = useState<boolean>(false);
 
   useEffect(() => {
-    api.get("/cards").then((response) => setPokemonList(response.data));
+    api
+      .get("/cards?orderBy=name")
+      .then((response) => setPokemonList(response.data));
   }, []);
 
   return (
     <>
       <Header />
-      <PokemonCarousel cards={pokemonList?.cards} />
+      <PokemonCarousel data={pokemonList?.data} />
       <div className="card-table">
         {loading && (
           <Spinner animation="border" role="status">
@@ -28,7 +30,7 @@ export function PokemonHome() {
         )}
         <div className=""></div>
         <Row xs={1} md={4} className="g-4">
-          {pokemonList?.cards.map(({ name, imageUrl, id, types }) => (
+          {pokemonList?.data.map(({ name, images, id, types }) => (
             <Link key={id} to={`/info/${id}`}>
               <Col>
                 <Card style={{ width: "18rem" }} className="mb-2">
@@ -37,7 +39,7 @@ export function PokemonHome() {
                   </Card.Header>
                   <Card.Body>
                     <Card.Title>
-                      <img src={imageUrl} alt="" />
+                      <img src={images?.small} alt="" />
                     </Card.Title>
                     <Card.Text>
                       Tipo: <strong>{types}</strong>

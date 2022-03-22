@@ -1,5 +1,5 @@
 import "../styles/header.scss";
-import { SearchBar } from "./SearchBar";
+import SearchBar from "./SearchBar";
 
 export default function Header() {
   return (
@@ -7,7 +7,7 @@ export default function Header() {
       <a href="/" className="logo">
         Pokemon
       </a>
-      <div className="header-right"></div>
+      <div className="header-right">{/* <SearchBar /> */}</div>
     </div>
   );
 }

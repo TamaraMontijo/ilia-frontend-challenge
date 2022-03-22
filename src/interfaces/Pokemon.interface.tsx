@@ -2,11 +2,16 @@ interface Dados {
   id?: string;
   name?: string;
   types?: [string];
-  imageUrl?: string;
+  images?: Images;
 }
 
+type Images = {
+  small: string;
+  large: string;
+};
+
 type Pokemons = {
-  cards?: Dados[];
-}
+  data?: Dados[];
+};
 
 export default Pokemons;

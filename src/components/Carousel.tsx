@@ -4,16 +4,16 @@ import Pokemons from "../interfaces/Pokemon.interface";
 
 import "../styles/carousel.scss";
 
-export function PokemonCarousel({ cards }: Pokemons) {
+export function PokemonCarousel({ data }: Pokemons) {
   return (
     <div className="carousel">
       <Carousel>
-        {cards?.map((res) => (
+        {data?.map((res) => (
           <Carousel.Item key={res.id}>
             <Link to={`/info/${res.id}`}>
               <img
                 className="d-block w-100"
-                src={res.imageUrl}
+                src={res.images?.small}
                 alt="First slide"
               />
             </Link>

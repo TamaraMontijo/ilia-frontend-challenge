@@ -2,11 +2,16 @@ interface Pokemon {
   id?: string;
   name?: string;
   types?: [string];
-  imageUrl?: string;
+  images?: Images;
 }
 
+type Images = {
+  small: string;
+  large: string;
+};
+
 type PokemonList = {
-  cards: Pokemon[];
+  data: Pokemon[];
 };
 
 export default PokemonList;

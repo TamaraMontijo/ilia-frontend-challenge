@@ -14,14 +14,19 @@ interface Data {
   id: string;
   name: string;
   types: [string];
-  imageUrl: string;
+  images: Images;
   resistances: Value[];
   weaknesses: Value[];
   attacks: Damage[];
 }
 
 type PokemonData = {
-  card: Data;
+  data: Data;
+};
+
+type Images = {
+  small: string;
+  large: string;
 };
 
 export default PokemonData;
